@@ -1,0 +1,452 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* modal */
+.modal-text {
+    color: #000;
+}
+
+.modal-title {
+    color: #000;
+}
+
+/* Navbar */
+/* Set the background image for the nav container */
+
+.nav-container {
+    background-image: url('images/spice-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.head-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding-top: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+    /* For Safari support */
+}
+
+.logo {
+    color: #FF7F37;
+    font-family: 'Rouge Script', cursive;
+    font-size: 100px;
+    font-weight: lighter;
+    margin-left: 5rem;
+}
+
+
+
+.c-name {
+    color: #000;
+    height: 50px;
+    font-size: 40px;
+    margin-bottom: 2rem;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slogan {
+    color: #FF0000;
+    letter-spacing: 8px;
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact {
+    color: #5E5A5A;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3.2rem;
+    padding-left: 10rem;
+}
+
+/* body */
+
+.body-background {
+    padding: 50px;
+}
+
+.main-head {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.first-hr {
+    background: #FF0000;
+    opacity: 100%;
+    width: 500px;
+    margin: 0 auto;
+    height: 3px;
+    border: none;
+}
+
+/* Product gallary */
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.item {
+    display: inline-block;
+    text-decoration: none;
+    background: #FFF;
+    margin: 10px;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(212, 212, 212, 1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(212, 212, 212, 1);
+    box-shadow: 2px 2px 2px 0px rgba(212, 212, 212, 1);
+    position: relative;
+}
+
+.item img {
+    width: 360px;
+    height: 360px;
+}
+
+.item .stats {
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #555;
+}
+
+.item .stats i {
+    transition: color 250ms;
+    -webkit-transition: color 250ms;
+    -moz-transition: color 250ms;
+    -o-transition: color 250ms;
+}
+
+.item .stats span:hover .fa-heart {
+    color: red;
+}
+
+.item h2 {
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.item p {
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 20px;
+    color: silver;
+}
+
+.item .description {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eee;
+    height: 260px;
+    background: rgba(0, 0, 0, .7);
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: width 500ms;
+    -webkit-transition: width 500ms;
+    -moz-transition: width 500ms;
+    -o-transition: width 500ms;
+}
+
+.background {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.second-p {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 2rem;
+}
+
+.second-hr {
+    background: #FF0000;
+    opacity: 100%;
+    width: 670px;
+    margin: 0 auto;
+    height: 3px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.parallax {
+    background: url('images/parallex-image.jpeg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+.parallax-inner {
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.price {
+    text-align: center;
+}
+
+.third-hr {
+    width: 300px;
+    background-color: #FF0000;
+    margin: 0 auto;
+    opacity: 100%;
+    height: 3px;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.price-image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 4rem;
+}
+
+/* footer */
+
+.footer-hr {
+    background-color: silver;
+    opacity: 50%;
+    border: none;
+    height: 1px;
+}
+
+
+.footer {
+    background: #000;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% -1%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #FF0000;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+
+.footer-logo {
+    color: #FF7F37;
+    font-family: 'Rouge Script', cursive;
+    font-size: 100px;
+    font-weight: lighter;
+    margin-bottom: -2rem;
+    text-align: center;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.contact-text{
+    color:#FF0000 ;
+}
+
+.address-text{
+    color: #FF0000;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+@media (max-width:1291px) {
+
+    .logo {
+        color: #FF7F37;
+        font-family: 'Rouge Script', cursive;
+        font-size: 100px;
+        font-weight: lighter;
+        margin-left: 0rem;
+    }
+
+    .head-columns {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact {
+        color: #5E5A5A;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 3.2rem;
+        padding-right: 10rem;
+    }
+
+}
+
+@media (max-width:439px) {
+
+    .logo {
+        color: #FF7F37;
+        font-family: 'Rouge Script', cursive;
+        font-size: 100px;
+        font-weight: lighter;
+        margin-left: 0rem;
+    }
+
+    .head-columns {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact {
+        color: #5E5A5A;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 3.2rem;
+        padding-right: -10rem;
+        text-align: center;
+
+    }
+
+    .slogan {
+        color: #FF0000;
+        letter-spacing: 8px;
+        margin-top: 6rem;
+        font-size: 30px;
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
